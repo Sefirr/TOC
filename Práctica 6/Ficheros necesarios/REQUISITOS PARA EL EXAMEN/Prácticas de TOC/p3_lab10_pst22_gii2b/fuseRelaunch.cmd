@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/hlocal/TOC/p3_lab10_pst22_gii2b/tb_multiplier_isim_beh.exe" -prj "C:/hlocal/TOC/p3_lab10_pst22_gii2b/tb_multiplier_beh.prj" "work.tb_multiplier" 

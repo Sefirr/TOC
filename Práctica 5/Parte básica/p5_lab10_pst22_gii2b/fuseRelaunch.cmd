@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/hlocal/TOC/p5_lab10_pst22_gii2b/tb_sort_isim_beh.exe" -prj "C:/hlocal/TOC/p5_lab10_pst22_gii2b/tb_sort_beh.prj" "work.tb_sort" 

@@ -1,0 +1,10 @@
+EN tb_sort NULL C:/hlocal/TOC/p5_lab10_pst22_gii2b/tb_sort.vhd sub00/vhpl09 1388965414
+EN cd NULL C:/hlocal/TOC/p5_lab10_pst22_gii2b/cd.vhd sub00/vhpl02 1388965885
+AR cd rtl C:/hlocal/TOC/p5_lab10_pst22_gii2b/cd.vhd sub00/vhpl03 1388965886
+AR sort_mem sort_mem_a C:/hlocal/TOC/p5_lab10_pst22_gii2b/ipcore_dir/sort_mem.vhd sub00/vhpl01 1388965892
+AR uc rtl C:/hlocal/TOC/p5_lab10_pst22_gii2b/uc.vhd sub00/vhpl05 1388965888
+EN sort NULL C:/hlocal/TOC/p5_lab10_pst22_gii2b/sort.vhd sub00/vhpl06 1388965889
+AR sort_mem spartan3 C:/hlocal/TOC/p5_lab10_pst22_gii2b/ipcore_dir/sort_mem_synth.vhd sub00/vhpl08 1388965884
+EN uc NULL C:/hlocal/TOC/p5_lab10_pst22_gii2b/uc.vhd sub00/vhpl04 1388965887
+AR sort struct C:/hlocal/TOC/p5_lab10_pst22_gii2b/sort.vhd sub00/vhpl07 1388965890
+EN sort_mem NULL C:/hlocal/TOC/p5_lab10_pst22_gii2b/ipcore_dir/sort_mem.vhd sub00/vhpl00 1388965891

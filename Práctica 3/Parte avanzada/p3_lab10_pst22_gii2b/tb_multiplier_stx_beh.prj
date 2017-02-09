@@ -1,0 +1,3 @@
+vhdl isim_temp "celda.vhd"
+vhdl isim_temp "mult.vhd"
+vhdl isim_temp "tb_multiplier_new.vhd"

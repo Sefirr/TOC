@@ -1,0 +1,7 @@
+AR celda circuito C:/hlocal/TOC/p3_lab10_pst22_gii2b/celda.vhd sub00/vhpl01 1384209350
+EN celda NULL C:/hlocal/TOC/p3_lab10_pst22_gii2b/celda.vhd sub00/vhpl00 1384524782
+AR mult behavioral C:/hlocal/TOC/p3_lab10_pst22_gii2b/mult.vhd sub00/vhpl03 1384206439
+EN mult NULL C:/hlocal/TOC/p3_lab10_pst22_gii2b/mult.vhd sub00/vhpl02 1384209351
+EN multiplicador NULL C:/hlocal/TOC/p3_lab10_pst22_gii2b/mult.vhd sub00/vhpl04 1384524784
+AR multiplicador behavioral C:/hlocal/TOC/p3_lab10_pst22_gii2b/mult.vhd sub00/vhpl06 1384524785
+AR celda comportamiento C:/hlocal/TOC/p3_lab10_pst22_gii2b/celda.vhd sub00/vhpl05 1384524783

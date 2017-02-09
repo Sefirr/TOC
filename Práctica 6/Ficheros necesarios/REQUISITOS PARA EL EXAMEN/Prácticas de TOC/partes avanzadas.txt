@@ -1,0 +1,5 @@
+- Biestables sincronos y asincronos de todos los tipos con el divisor
+- Usando el contador cuando este 4 veces en tranquila pasar a hablar
+- Multiplicador segmentado
+- Divisor en paralelo
+- Agilizar el camino crítico, eliminando el sumador y sustituyendolo por un contador.

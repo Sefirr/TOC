@@ -1,0 +1,9 @@
+xst -intstyle ise -ifn "C:/hlocal/TOC/p5_lab10_pst22_gii2b/sort.xst" -ofn "C:/hlocal/TOC/p5_lab10_pst22_gii2b/sort.syr" 
+xst -intstyle ise -ifn "C:/hlocal/TOC/p5_lab10_pst22_gii2b/sort.xst" -ofn "C:/hlocal/TOC/p5_lab10_pst22_gii2b/sort.syr" 
+xst -intstyle ise -ifn "C:/hlocal/TOC/p5_lab10_pst22_gii2b/sort.xst" -ofn "C:/hlocal/TOC/p5_lab10_pst22_gii2b/sort.syr" 
+xst -intstyle ise -ifn "C:/hlocal/TOC/p5_lab10_pst22_gii2b/sort.xst" -ofn "C:/hlocal/TOC/p5_lab10_pst22_gii2b/sort.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s1000-ft256-5 sort.ngc sort.ngd  
+map -intstyle ise -p xc3s1000-ft256-5 -cm area -ir off -pr off -c 100 -o sort_map.ncd sort.ngd sort.pcf 
+par -w -intstyle ise -ol high -t 1 sort_map.ncd sort.ncd sort.pcf 
+xst -intstyle ise -ifn "C:/hlocal/TOC/p5_lab10_pst22_gii2b/sort.xst" -ofn "C:/hlocal/TOC/p5_lab10_pst22_gii2b/sort.syr" 
+xst -intstyle ise -ifn "C:/hlocal/TOC/p5_lab10_pst22_gii2b/sort.xst" -ofn "C:/hlocal/TOC/p5_lab10_pst22_gii2b/sort.syr" 

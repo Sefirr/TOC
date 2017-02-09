@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/hlocal/TOC/p5_lab10_pst22_gii2b/tb_sort.xst" -ofn "C:/hlocal/TOC/p5_lab10_pst22_gii2b/tb_sort.syr" 

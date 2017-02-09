@@ -1,0 +1,2 @@
+vhdl isim_temp "netgen/map/multiplicador_map.vhd"
+vhdl isim_temp "tb_multiplier_new.vhd"

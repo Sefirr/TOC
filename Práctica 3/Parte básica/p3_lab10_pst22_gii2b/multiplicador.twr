@@ -1,0 +1,140 @@
+--------------------------------------------------------------------------------
+Release 14.6 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
+-n 3 -fastpaths -xml multiplicador.twx multiplicador.ncd -o multiplicador.twr
+multiplicador.pcf
+
+Design file:              multiplicador.ncd
+Physical constraint file: multiplicador.pcf
+Device,package,speed:     xc3s1000,ft256,-5 (PRODUCTION 1.39 2013-06-08)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+Mx<0>          |Px<0>          |    6.512|
+Mx<0>          |Px<1>          |    6.538|
+Mx<0>          |Px<2>          |    8.012|
+Mx<0>          |Px<3>          |    9.258|
+Mx<0>          |Px<4>          |   12.286|
+Mx<0>          |Px<5>          |   13.816|
+Mx<0>          |Px<6>          |   14.847|
+Mx<0>          |Px<7>          |   14.796|
+Mx<0>          |Px<8>          |   15.640|
+Mx<0>          |Px<9>          |   15.950|
+Mx<1>          |Px<1>          |    7.329|
+Mx<1>          |Px<2>          |    9.067|
+Mx<1>          |Px<3>          |    9.983|
+Mx<1>          |Px<4>          |   13.011|
+Mx<1>          |Px<5>          |   14.541|
+Mx<1>          |Px<6>          |   15.572|
+Mx<1>          |Px<7>          |   15.521|
+Mx<1>          |Px<8>          |   16.365|
+Mx<1>          |Px<9>          |   16.675|
+Mx<2>          |Px<2>          |    8.334|
+Mx<2>          |Px<3>          |    8.846|
+Mx<2>          |Px<4>          |   11.523|
+Mx<2>          |Px<5>          |   13.053|
+Mx<2>          |Px<6>          |   14.084|
+Mx<2>          |Px<7>          |   14.033|
+Mx<2>          |Px<8>          |   14.877|
+Mx<2>          |Px<9>          |   15.187|
+Mx<3>          |Px<3>          |    7.623|
+Mx<3>          |Px<4>          |   10.429|
+Mx<3>          |Px<5>          |   11.959|
+Mx<3>          |Px<6>          |   12.990|
+Mx<3>          |Px<7>          |   12.939|
+Mx<3>          |Px<8>          |   13.783|
+Mx<3>          |Px<9>          |   14.093|
+Mx<4>          |Px<4>          |    8.951|
+Mx<4>          |Px<5>          |   10.481|
+Mx<4>          |Px<6>          |   11.512|
+Mx<4>          |Px<7>          |   11.461|
+Mx<4>          |Px<8>          |   12.305|
+Mx<4>          |Px<9>          |   12.615|
+Qx<0>          |Px<0>          |    6.614|
+Qx<0>          |Px<1>          |    7.436|
+Qx<0>          |Px<2>          |    8.499|
+Qx<0>          |Px<3>          |   10.077|
+Qx<0>          |Px<4>          |   13.105|
+Qx<0>          |Px<5>          |   14.635|
+Qx<0>          |Px<6>          |   15.666|
+Qx<0>          |Px<7>          |   15.615|
+Qx<0>          |Px<8>          |   16.459|
+Qx<0>          |Px<9>          |   16.769|
+Qx<1>          |Px<1>          |    6.357|
+Qx<1>          |Px<2>          |    8.664|
+Qx<1>          |Px<3>          |    9.078|
+Qx<1>          |Px<4>          |   12.106|
+Qx<1>          |Px<5>          |   13.636|
+Qx<1>          |Px<6>          |   14.667|
+Qx<1>          |Px<7>          |   14.616|
+Qx<1>          |Px<8>          |   15.460|
+Qx<1>          |Px<9>          |   15.770|
+Qx<2>          |Px<2>          |    8.340|
+Qx<2>          |Px<3>          |    9.111|
+Qx<2>          |Px<4>          |   11.201|
+Qx<2>          |Px<5>          |   12.731|
+Qx<2>          |Px<6>          |   13.762|
+Qx<2>          |Px<7>          |   13.711|
+Qx<2>          |Px<8>          |   14.555|
+Qx<2>          |Px<9>          |   14.865|
+Qx<3>          |Px<3>          |    8.470|
+Qx<3>          |Px<4>          |   10.054|
+Qx<3>          |Px<5>          |   11.065|
+Qx<3>          |Px<6>          |   12.096|
+Qx<3>          |Px<7>          |   12.045|
+Qx<3>          |Px<8>          |   12.889|
+Qx<3>          |Px<9>          |   13.199|
+Qx<4>          |Px<4>          |    9.528|
+Qx<4>          |Px<5>          |    9.569|
+Qx<4>          |Px<6>          |   11.284|
+Qx<4>          |Px<7>          |   11.233|
+Qx<4>          |Px<8>          |   12.077|
+Qx<4>          |Px<9>          |   12.387|
+---------------+---------------+---------+
+
+
+Analysis completed Wed Nov 13 00:40:25 2013 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 161 MB
+
+
+

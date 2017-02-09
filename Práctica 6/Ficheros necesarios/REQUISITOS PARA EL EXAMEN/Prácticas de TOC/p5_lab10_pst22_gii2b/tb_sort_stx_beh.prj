@@ -1,0 +1,6 @@
+vhdl isim_temp "ipcore_dir/sort_mem.vhd"
+vhdl isim_temp "ipcore_dir/sort_mem_synth.vhd"
+vhdl isim_temp "uc.vhd"
+vhdl isim_temp "cd.vhd"
+vhdl isim_temp "sort.vhd"
+vhdl isim_temp "tb_sort.vhd"

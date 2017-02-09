@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "F:/p3_lab10_pst22_gii2b/tb_multiplier_isim_map.exe" -prj "F:/p3_lab10_pst22_gii2b/tb_multiplier_map.prj" "work.tb_multiplier" 

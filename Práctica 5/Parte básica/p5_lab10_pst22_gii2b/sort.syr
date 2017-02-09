@@ -1,0 +1,539 @@
+Release 14.6 - xst P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: sort.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "sort.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "sort"
+Output Format                      : NGC
+Target Device                      : xc3s1000-5-ft256
+
+---- Source Options
+Top Module Name                    : sort
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+WARNING:HDLParsers:3607 - Unit work/sort_mem is now defined in a different file.  It was defined in "C:/hlocal/TOC/p5_lab10_pst22_gii2b/ipcore_dir/sort_mem.vhd", and is now defined in "C:/hlocal/TOC/p5_lab10_pst22_gii2b/ipcore_dir/sort_mem_synth.vhd".
+Compiling vhdl file "C:/hlocal/TOC/p5_lab10_pst22_gii2b/ipcore_dir/sort_mem_synth.vhd" in Library work.
+Architecture spartan3 of Entity sort_mem is up to date.
+Compiling vhdl file "C:/hlocal/TOC/p5_lab10_pst22_gii2b/cd.vhd" in Library work.
+Architecture rtl of Entity cd is up to date.
+Compiling vhdl file "C:/hlocal/TOC/p5_lab10_pst22_gii2b/uc.vhd" in Library work.
+Architecture rtl of Entity uc is up to date.
+Compiling vhdl file "C:/hlocal/TOC/p5_lab10_pst22_gii2b/sort.vhd" in Library work.
+Architecture struct of Entity sort is up to date.
+Compiling vhdl file "C:/hlocal/TOC/p5_lab10_pst22_gii2b/ipcore_dir/sort_mem.vhd" in Library work.
+Architecture sort_mem_a of Entity sort_mem is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <sort> in library <work> (architecture <struct>).
+
+Analyzing hierarchy for entity <cd> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <uc> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <sort_mem> in library <work> (architecture <spartan3>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <sort> in library <work> (Architecture <struct>).
+Entity <sort> analyzed. Unit <sort> generated.
+
+Analyzing Entity <cd> in library <work> (Architecture <rtl>).
+WARNING:Xst:819 - "C:/hlocal/TOC/p5_lab10_pst22_gii2b/cd.vhd" line 139: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <ram_stat>
+Entity <cd> analyzed. Unit <cd> generated.
+
+Analyzing Entity <sort_mem> in library <work> (Architecture <spartan3>).
+Entity <sort_mem> analyzed. Unit <sort_mem> generated.
+
+Analyzing Entity <uc> in library <work> (Architecture <rtl>).
+Entity <uc> analyzed. Unit <uc> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <uc>.
+    Related source file is "C:/hlocal/TOC/p5_lab10_pst22_gii2b/uc.vhd".
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <current_state> of Case statement line 97 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <current_state> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Using one-hot encoding for signal <current_state>.
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <current_state> of Case statement line 47 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <current_state> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+WARNING:Xst:737 - Found 10-bit latch for signal <next_state>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 10-bit register for signal <current_state>.
+Unit <uc> synthesized.
+
+
+Synthesizing Unit <sort_mem>.
+    Related source file is "C:/hlocal/TOC/p5_lab10_pst22_gii2b/ipcore_dir/sort_mem_synth.vhd".
+WARNING:Xst:647 - Input <wea<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <web<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clka> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clkb> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <addra> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <addrb> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <dina> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <dinb> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1305 - Output <douta> is never assigned. Tied to value 0000.
+WARNING:Xst:1305 - Output <doutb> is never assigned. Tied to value 0000.
+Unit <sort_mem> synthesized.
+
+
+Synthesizing Unit <cd>.
+    Related source file is "C:/hlocal/TOC/p5_lab10_pst22_gii2b/cd.vhd".
+    Found 4-bit 32-to-1 multiplexer for signal <$varindex0000> created at line 144.
+    Found 5-bit adder for signal <add>.
+    Found 5-bit comparator less for signal <cmp_j$cmp_lt0000> created at line 217.
+    Found 4-bit comparator less for signal <cmp_mem$cmp_lt0000> created at line 229.
+    Found 5-bit up counter for signal <cntri>.
+    Found 5-bit up counter for signal <cntrj>.
+    Found 4-bit 32-to-1 multiplexer for signal <dinb>.
+    Found 128-bit register for signal <ram_stat>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred 128 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred   8 Multiplexer(s).
+Unit <cd> synthesized.
+
+
+Synthesizing Unit <sort>.
+    Related source file is "C:/hlocal/TOC/p5_lab10_pst22_gii2b/sort.vhd".
+Unit <sort> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 5-bit adder                                           : 1
+# Counters                                             : 1
+ 5-bit up counter                                      : 1
+# Registers                                            : 33
+ 10-bit register                                       : 1
+ 4-bit register                                        : 32
+# Latches                                              : 1
+ 10-bit latch                                          : 1
+# Comparators                                          : 2
+ 4-bit comparator less                                 : 1
+ 5-bit comparator less                                 : 1
+# Multiplexers                                         : 2
+ 4-bit 32-to-1 multiplexer                             : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1426 - The value init of the FF/Latch 0 hinder the constant cleaning in the block 0.
+   You should achieve better results by setting this init to 0.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 5-bit adder                                           : 1
+# Counters                                             : 1
+ 5-bit up counter                                      : 1
+# Registers                                            : 138
+ Flip-Flops                                            : 138
+# Latches                                              : 1
+ 10-bit latch                                          : 1
+# Comparators                                          : 2
+ 4-bit comparator less                                 : 1
+ 5-bit comparator less                                 : 1
+# Multiplexers                                         : 8
+ 1-bit 32-to-1 multiplexer                             : 8
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <sort> ...
+
+Optimizing unit <cd> ...
+
+Optimizing unit <uc> ...
+WARNING:Xst:1426 - The value init of the FF/Latch i_uc/next_state_0 hinder the constant cleaning in the block sort.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1293 - FF/Latch <i_uc/next_state_7> has a constant value of 0 in block <sort>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <i_uc/current_state_7> has a constant value of 0 in block <sort>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block sort, actual ratio is 2.
+FlipFlop i_uc/current_state_0 has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 143
+ Flip-Flops                                            : 143
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : sort.ngr
+Top Level Output File Name         : sort
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 18
+
+Cell Usage :
+# BELS                             : 328
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 13
+#      LUT3                        : 144
+#      LUT3_D                      : 2
+#      LUT3_L                      : 1
+#      LUT4                        : 37
+#      LUT4_D                      : 7
+#      MUXF5                       : 65
+#      MUXF6                       : 32
+#      MUXF7                       : 16
+#      MUXF8                       : 8
+#      VCC                         : 1
+# FlipFlops/Latches                : 152
+#      FDC                         : 8
+#      FDCE                        : 5
+#      FDE                         : 128
+#      FDP                         : 2
+#      LD                          : 9
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 17
+#      IBUF                        : 12
+#      OBUF                        : 5
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1000ft256-5 
+
+ Number of Slices:                      165  out of   7680     2%  
+ Number of Slice Flip Flops:            151  out of  15360     0%  
+ Number of 4 input LUTs:                205  out of  15360     1%  
+ Number of IOs:                          18
+ Number of bonded IOBs:                  18  out of    173    10%  
+    IOB Flip Flops:                       1
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+---------------------------------------------------+---------------------------+-------+
+Clock Signal                                       | Clock buffer(FF name)     | Load  |
+---------------------------------------------------+---------------------------+-------+
+clk                                                | BUFGP                     | 143   |
+i_uc/next_state_not0001(i_uc/next_state_not00011:O)| NONE(*)(i_uc/next_state_9)| 9     |
+---------------------------------------------------+---------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+----------------------------------------------------+------------------------+-------+
+Control Signal                                      | Buffer(FF name)        | Load  |
+----------------------------------------------------+------------------------+-------+
+i_cd/rst_n_inv(i_uc/current_state_Acst_inv1_INV_0:O)| NONE(i_cd/cntrj_0)     | 15    |
+----------------------------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 7.004ns (Maximum Frequency: 142.767MHz)
+   Minimum input arrival time before clock: 5.978ns
+   Maximum output required time after clock: 13.732ns
+   Maximum combinational path delay: 12.953ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 7.004ns (frequency: 142.767MHz)
+  Total number of paths / destination ports: 12446 / 266
+-------------------------------------------------------------------------
+Delay:               7.004ns (Levels of Logic = 6)
+  Source:            i_cd/cntrj_0 (FF)
+  Destination:       i_cd/ram_stat_22_3 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: i_cd/cntrj_0 to i_cd/ram_stat_22_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            75   0.626   1.955  i_cd/cntrj_0 (i_cd/cntrj_0)
+     LUT2:I1->O           16   0.479   1.051  i_cd/Madd_add_xor<1>11 (i_cd/add<1>)
+     MUXF5:S->O            1   0.540   0.000  i_cd/mux6_5_f5 (i_cd/mux6_5_f5)
+     MUXF6:I1->O           1   0.298   0.000  i_cd/mux6_4_f6 (i_cd/mux6_4_f6)
+     MUXF7:I1->O           1   0.298   0.000  i_cd/mux6_3_f7 (i_cd/mux6_3_f7)
+     MUXF8:I1->O           2   0.298   0.804  i_cd/mux6_2_f8 (i_cd/_varindex0000<2>)
+     LUT3:I2->O           16   0.479   0.000  i_cd/dina<2>1 (i_cd/dina<2>)
+     FDE:D                     0.176          i_cd/ram_stat_8_2
+    ----------------------------------------
+    Total                      7.004ns (3.194ns logic, 3.810ns route)
+                                       (45.6% logic, 54.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 896 / 256
+-------------------------------------------------------------------------
+Offset:              5.978ns (Levels of Logic = 3)
+  Source:            debug_addr<1> (PAD)
+  Destination:       i_cd/ram_stat_15_3 (FF)
+  Destination Clock: clk rising
+
+  Data Path: debug_addr<1> to i_cd/ram_stat_15_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.715   0.976  debug_addr_1_IBUF (debug_addr_1_IBUF)
+     LUT3:I0->O           64   0.479   2.026  i_cd/addra<1>1 (i_cd/addra<1>)
+     LUT4:I0->O            4   0.479   0.779  i_cd/ram_stat_7_not0001 (i_cd/ram_stat_7_not0001)
+     FDE:CE                    0.524          i_cd/ram_stat_7_0
+    ----------------------------------------
+    Total                      5.978ns (2.197ns logic, 3.781ns route)
+                                       (36.7% logic, 63.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'i_uc/next_state_not0001'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              2.285ns (Levels of Logic = 2)
+  Source:            ini (PAD)
+  Destination:       i_uc/next_state_1 (LATCH)
+  Destination Clock: i_uc/next_state_not0001 falling
+
+  Data Path: ini to i_uc/next_state_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.715   0.915  ini_IBUF (ini_IBUF)
+     LUT2:I1->O            1   0.479   0.000  i_uc/next_state_mux0001<1>1 (i_uc/next_state_mux0001<1>)
+     LD:D                      0.176          i_uc/next_state_1
+    ----------------------------------------
+    Total                      2.285ns (1.370ns logic, 0.915ns route)
+                                       (59.9% logic, 40.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 381 / 5
+-------------------------------------------------------------------------
+Offset:              13.732ns (Levels of Logic = 8)
+  Source:            i_cd/cntrj_0 (FF)
+  Destination:       debug_dout<3> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: i_cd/cntrj_0 to debug_dout<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            75   0.626   1.844  i_cd/cntrj_0 (i_cd/cntrj_0)
+     LUT3_D:I2->O         95   0.479   2.177  i_cd/addra<0>1 (i_cd/addra<0>)
+     LUT3:I0->O            1   0.479   0.000  i_cd/mux2_6 (i_cd/mux2_6)
+     MUXF5:I1->O           1   0.314   0.000  i_cd/mux2_5_f5 (i_cd/mux2_5_f5)
+     MUXF6:I1->O           1   0.298   0.000  i_cd/mux2_4_f6 (i_cd/mux2_4_f6)
+     MUXF7:I1->O           1   0.298   0.000  i_cd/mux2_3_f7 (i_cd/mux2_3_f7)
+     MUXF8:I1->O           1   0.298   0.851  i_cd/mux2_2_f8 (i_cd/dinb<2>)
+     LUT2:I1->O            1   0.479   0.681  i_cd/debug_dout<2>1 (debug_dout_2_OBUF)
+     OBUF:I->O                 4.909          debug_dout_2_OBUF (debug_dout<2>)
+    ----------------------------------------
+    Total                     13.732ns (8.180ns logic, 5.552ns route)
+                                       (59.6% logic, 40.4% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 124 / 4
+-------------------------------------------------------------------------
+Delay:               12.953ns (Levels of Logic = 9)
+  Source:            debug_addr<0> (PAD)
+  Destination:       debug_dout<3> (PAD)
+
+  Data Path: debug_addr<0> to debug_dout<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.715   0.976  debug_addr_0_IBUF (debug_addr_0_IBUF)
+     LUT3_D:I0->O         95   0.479   2.177  i_cd/addra<0>1 (i_cd/addra<0>)
+     LUT3:I0->O            1   0.479   0.000  i_cd/mux2_6 (i_cd/mux2_6)
+     MUXF5:I1->O           1   0.314   0.000  i_cd/mux2_5_f5 (i_cd/mux2_5_f5)
+     MUXF6:I1->O           1   0.298   0.000  i_cd/mux2_4_f6 (i_cd/mux2_4_f6)
+     MUXF7:I1->O           1   0.298   0.000  i_cd/mux2_3_f7 (i_cd/mux2_3_f7)
+     MUXF8:I1->O           1   0.298   0.851  i_cd/mux2_2_f8 (i_cd/dinb<2>)
+     LUT2:I1->O            1   0.479   0.681  i_cd/debug_dout<2>1 (debug_dout_2_OBUF)
+     OBUF:I->O                 4.909          debug_dout_2_OBUF (debug_dout<2>)
+    ----------------------------------------
+    Total                     12.953ns (8.269ns logic, 4.684ns route)
+                                       (63.8% logic, 36.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.23 secs
+ 
+--> 
+
+Total memory usage is 277916 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   17 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

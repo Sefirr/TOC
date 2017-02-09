@@ -1,0 +1,5 @@
+vhdl work "ipcore_dir/sort_mem_synth.vhd"
+vhdl work "ipcore_dir/sort_mem.vhd"
+vhdl work "uc.vhd"
+vhdl work "cd.vhd"
+vhdl work "sort.vhd"

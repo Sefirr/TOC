@@ -1,0 +1,50 @@
+xst -intstyle ise -ifn "C:/hlocal/TOC/p3_lab10_pst22_gii2b/multiplicador.xst" -ofn "C:/hlocal/TOC/p3_lab10_pst22_gii2b/multiplicador.syr" 
+xst -intstyle ise -ifn "C:/hlocal/TOC/p3_lab10_pst22_gii2b/multiplicador.xst" -ofn "C:/hlocal/TOC/p3_lab10_pst22_gii2b/multiplicador.syr" 
+xst -intstyle ise -ifn "C:/hlocal/TOC/p3_lab10_pst22_gii2b/multiplicador.xst" -ofn "C:/hlocal/TOC/p3_lab10_pst22_gii2b/multiplicador.syr" 
+xst -intstyle ise -ifn "C:/hlocal/TOC/p3_lab10_pst22_gii2b/multiplicador.xst" -ofn "C:/hlocal/TOC/p3_lab10_pst22_gii2b/multiplicador.syr" 
+xst -intstyle ise -ifn "C:/hlocal/TOC/p3_lab10_pst22_gii2b/multiplicador.xst" -ofn "C:/hlocal/TOC/p3_lab10_pst22_gii2b/multiplicador.syr" 
+xst -intstyle ise -ifn "C:/hlocal/TOC/p3_lab10_pst22_gii2b/multiplicador.xst" -ofn "C:/hlocal/TOC/p3_lab10_pst22_gii2b/multiplicador.syr" 
+xst -intstyle ise -ifn "C:/Users/Javier Villarreal/Desktop/p3_lab10_pst22_gii2b/multiplicador.xst" -ofn "C:/Users/Javier Villarreal/Desktop/p3_lab10_pst22_gii2b/multiplicador.syr" 
+xst -intstyle ise -ifn "C:/hlocal/p3_lab10_pst22_gii2b/multiplicador.xst" -ofn "C:/hlocal/p3_lab10_pst22_gii2b/multiplicador.syr" 
+xst -intstyle ise -ifn "C:/hlocal/p3_lab10_pst22_gii2b/multiplicador.xst" -ofn "C:/hlocal/p3_lab10_pst22_gii2b/multiplicador.syr" 
+xst -intstyle ise -ifn "C:/hlocal/p3_lab10_pst22_gii2b/multiplicador.xst" -ofn "C:/hlocal/p3_lab10_pst22_gii2b/multiplicador.syr" 
+xst -intstyle ise -ifn "C:/hlocal/p3_lab10_pst22_gii2b/multiplicador.xst" -ofn "C:/hlocal/p3_lab10_pst22_gii2b/multiplicador.syr" 
+xst -intstyle ise -ifn "C:/hlocal/p3_lab10_pst22_gii2b/multiplicador.xst" -ofn "C:/hlocal/p3_lab10_pst22_gii2b/multiplicador.syr" 
+xst -intstyle ise -ifn "C:/hlocal/p3_lab10_pst22_gii2b/multiplicador.xst" -ofn "C:/hlocal/p3_lab10_pst22_gii2b/multiplicador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc3s1000-ft256-5 multiplicador.ngc multiplicador.ngd  
+xst -intstyle ise -ifn "C:/hlocal/p3_lab10_pst22_gii2b/multiplicador.xst" -ofn "C:/hlocal/p3_lab10_pst22_gii2b/multiplicador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc3s1000-ft256-5 multiplicador.ngc multiplicador.ngd  
+xst -intstyle ise -ifn "C:/hlocal/p3_lab10_pst22_gii2b/multiplicador.xst" -ofn "C:/hlocal/p3_lab10_pst22_gii2b/multiplicador.syr" 
+xst -intstyle ise -ifn "F:/p3_lab10_pst22_gii2b/multiplicador.xst" -ofn "F:/p3_lab10_pst22_gii2b/multiplicador.syr" 
+vhdtdtfi -prj p3_lab10_pst22_gii2b -o F:/p3_lab10_pst22_gii2b/multiplicador.vhi -module multiplicador -template C:/Xilinx/14.6/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work celda.vhd -lib work mult.vhd 
+xst -intstyle ise -ifn "F:/p3_lab10_pst22_gii2b/multiplicador.xst" -ofn "F:/p3_lab10_pst22_gii2b/multiplicador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc3s1000-ft256-5 multiplicador.ngc multiplicador.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc3s1000-ft256-5 multiplicador.ngc multiplicador.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc3s1000-ft256-5 multiplicador.ngc multiplicador.ngd  
+map -intstyle ise -p xc3s1000-ft256-5 -cm area -ir off -pr off -c 100 -o multiplicador_map.ncd multiplicador.ngd multiplicador.pcf 
+netgen -intstyle ise -s 5  -pcf multiplicador.pcf -rpw 100 -tpw 0 -ar Structure -tm multiplicador -w -dir netgen/map -ofmt vhdl -sim multiplicador_map.ncd multiplicador_map.vhd 
+xst -intstyle ise -ifn "F:/p3_lab10_pst22_gii2b/multiplicador.xst" -ofn "F:/p3_lab10_pst22_gii2b/multiplicador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc3s1000-ft256-5 multiplicador.ngc multiplicador.ngd  
+map -intstyle ise -p xc3s1000-ft256-5 -cm area -ir off -pr off -c 100 -o multiplicador_map.ncd multiplicador.ngd multiplicador.pcf 
+netgen -intstyle ise -s 5  -pcf multiplicador.pcf -rpw 100 -tpw 0 -ar Structure -tm multiplicador -w -dir netgen/map -ofmt vhdl -sim multiplicador_map.ncd multiplicador_map.vhd 
+xst -intstyle ise -ifn "F:/p3_lab10_pst22_gii2b/multiplicador.xst" -ofn "F:/p3_lab10_pst22_gii2b/multiplicador.syr" 
+xst -intstyle ise -ifn "F:/p3_lab10_pst22_gii2b/multiplicador.xst" -ofn "F:/p3_lab10_pst22_gii2b/multiplicador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc3s1000-ft256-5 multiplicador.ngc multiplicador.ngd  
+map -intstyle ise -p xc3s1000-ft256-5 -cm area -ir off -pr off -c 100 -o multiplicador_map.ncd multiplicador.ngd multiplicador.pcf 
+netgen -intstyle ise -s 5  -pcf multiplicador.pcf -rpw 100 -tpw 0 -ar Structure -tm multiplicador -w -dir netgen/map -ofmt vhdl -sim multiplicador_map.ncd multiplicador_map.vhd 
+xst -intstyle ise -ifn "F:/p3_lab10_pst22_gii2b/multiplicador.xst" -ofn "F:/p3_lab10_pst22_gii2b/multiplicador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc3s1000-ft256-5 multiplicador.ngc multiplicador.ngd  
+map -intstyle ise -p xc3s1000-ft256-5 -cm area -ir off -pr off -c 100 -o multiplicador_map.ncd multiplicador.ngd multiplicador.pcf 
+netgen -intstyle ise -s 5  -pcf multiplicador.pcf -rpw 100 -tpw 0 -ar Structure -tm multiplicador -w -dir netgen/map -ofmt vhdl -sim multiplicador_map.ncd multiplicador_map.vhd 
+xst -intstyle ise -ifn "F:/p3_lab10_pst22_gii2b/multiplicador.xst" -ofn "F:/p3_lab10_pst22_gii2b/multiplicador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc3s1000-ft256-5 multiplicador.ngc multiplicador.ngd  
+map -intstyle ise -p xc3s1000-ft256-5 -cm area -ir off -pr off -c 100 -o multiplicador_map.ncd multiplicador.ngd multiplicador.pcf 
+netgen -intstyle ise -s 5  -pcf multiplicador.pcf -rpw 100 -tpw 0 -ar Structure -tm multiplicador -w -dir netgen/map -ofmt vhdl -sim multiplicador_map.ncd multiplicador_map.vhd 
+xst -intstyle ise -ifn "F:/p3_lab10_pst22_gii2b/multiplicador.xst" -ofn "F:/p3_lab10_pst22_gii2b/multiplicador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc3s1000-ft256-5 multiplicador.ngc multiplicador.ngd  
+map -intstyle ise -p xc3s1000-ft256-5 -cm area -ir off -pr off -c 100 -o multiplicador_map.ncd multiplicador.ngd multiplicador.pcf 
+netgen -intstyle ise -s 5  -pcf multiplicador.pcf -rpw 100 -tpw 0 -ar Structure -tm multiplicador -w -dir netgen/map -ofmt vhdl -sim multiplicador_map.ncd multiplicador_map.vhd 
+xst -intstyle ise -ifn "F:/p3_lab10_pst22_gii2b/multiplicador.xst" -ofn "F:/p3_lab10_pst22_gii2b/multiplicador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc3s1000-ft256-5 multiplicador.ngc multiplicador.ngd  
+map -intstyle ise -p xc3s1000-ft256-5 -cm area -ir off -pr off -c 100 -o multiplicador_map.ncd multiplicador.ngd multiplicador.pcf 
+netgen -intstyle ise -s 5  -pcf multiplicador.pcf -rpw 100 -tpw 0 -ar Structure -tm multiplicador -w -dir netgen/map -ofmt vhdl -sim multiplicador_map.ncd multiplicador_map.vhd 

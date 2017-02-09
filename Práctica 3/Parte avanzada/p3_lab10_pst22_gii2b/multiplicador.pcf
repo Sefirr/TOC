@@ -1,0 +1,30 @@
+//! **************************************************************************
+// Written by: Map P.68d on Fri Nov 15 01:16:53 2013
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "T9" LEVEL 1;
+COMP "result<0>" LOCATE = SITE "L5" LEVEL 1;
+COMP "result<1>" LOCATE = SITE "N2" LEVEL 1;
+COMP "result<2>" LOCATE = SITE "M3" LEVEL 1;
+COMP "result<3>" LOCATE = SITE "N1" LEVEL 1;
+COMP "result<4>" LOCATE = SITE "T13" LEVEL 1;
+COMP "result<5>" LOCATE = SITE "L15" LEVEL 1;
+COMP "result<6>" LOCATE = SITE "J13" LEVEL 1;
+COMP "result<7>" LOCATE = SITE "H15" LEVEL 1;
+COMP "result<8>" LOCATE = SITE "H14" LEVEL 1;
+COMP "result<9>" LOCATE = SITE "M4" LEVEL 1;
+COMP "op1<0>" LOCATE = SITE "P12" LEVEL 1;
+COMP "op1<1>" LOCATE = SITE "J1" LEVEL 1;
+COMP "op1<2>" LOCATE = SITE "H1" LEVEL 1;
+COMP "op1<3>" LOCATE = SITE "H3" LEVEL 1;
+COMP "op2<0>" LOCATE = SITE "K15" LEVEL 1;
+COMP "op1<4>" LOCATE = SITE "G2" LEVEL 1;
+COMP "op2<1>" LOCATE = SITE "K16" LEVEL 1;
+COMP "op2<2>" LOCATE = SITE "F15" LEVEL 1;
+COMP "op2<3>" LOCATE = SITE "K4" LEVEL 1;
+COMP "op2<4>" LOCATE = SITE "K3" LEVEL 1;
+COMP "rst" LOCATE = SITE "E11" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+
